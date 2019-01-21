@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Practice JavaScript by drawing</title>
+</head>
+<body>
+ <canvas id="myCanvas" height="300" width="450" style="border: 1px solid black"></canvas>
+ <script>
+  var canvas = document.getElementById('myCanvas');
+  var context = canvas.getContext('2d');
+  function filledStar(x,y,a){
+  context.fillStyle='rgb(203, 219, 0,0.7)'
+  //context.strokeStyle='grey'
+  context.beginPath();
+  context.moveTo(x+a/2-(Math.sin(72*Math.PI/180)*a/2), y-Math.sin(18*Math.PI/180)*a/2);/*1-ok*/
+  context.lineTo(x+a-2*(a/2-(Math.sin(72*Math.PI/180)*a/2)),y-Math.sin(18*Math.PI/180)*a/2);/*2-ok*/
+  context.lineTo(x+a/2-(Math.sin(36*Math.PI/180)*a/2),(Math.sin(54*Math.PI/180)*a/2)+y);/*3-ok*/
+  context.lineTo(x+a/2,y-a/2);/*4-ok*/
+  context.lineTo(x+a-(Math.sin(36*Math.PI/180)*a/2),(Math.sin(54*Math.PI/180)*a/2)+y);/*5-ok*/
+  context.lineTo(x+a/2-(Math.sin(72*Math.PI/180)*a/2),y-Math.sin(18*Math.PI/180)*a/2);/*6-ok*/
+  context.fill();
+  //context.stroke();
+}
+
+console.log();
+filledStar(40,50,75);
+filledStar(130,120,100);
+filledStar(250,220,150);
+
+ </script>
+</body>
+</html>
