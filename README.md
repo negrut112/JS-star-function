@@ -14,12 +14,12 @@ I had troubles to determine the other angles coordinate so I used math formulas 
 <p>function filledStar(x,y,a){<br>
 context.fillStyle=‘red’<br>
 context.beginPath();<br>
-context.moveTo(x+a/2-(Math.sin(72Math.PI/180)a/2), y-Math.sin(18Math.PI/180)a/2);/1-ok/<br>
-context.lineTo(x+a-2(a/2-(Math.sin(72Math.PI/180)a/2)),y-Math.sin(18Math.PI/180)a/2);/2-ok/<br>
-context.lineTo(x+a/2-(Math.sin(36Math.PI/180)a/2),(Math.sin(54Math.PI/180)a/2)+y);/3-ok/<br>
-context.lineTo(x+a/2,y-a/2);/4-ok/<br>
-context.lineTo(x+a-(Math.sin(36Math.PI/180)a/2),(Math.sin(54Math.PI/180)a/2)+y);/5-ok/<br>
-context.lineTo(x+a/2-(Math.sin(72Math.PI/180)a/2),y-Math.sin(18Math.PI/180)*a/2);/6-ok/<br>
+context.moveTo(x+a/2-(Math.sin(72Math.PI/180)a/2), y-Math.sin(18Math.PI/180)a/2); /1-ok/<br>
+context.lineTo(x+a-2(a/2-(Math.sin(72Math.PI/180)a/2)),y-Math.sin(18Math.PI/180)a/2); /2-ok/<br>
+context.lineTo(x+a/2-(Math.sin(36Math.PI/180)a/2),(Math.sin(54Math.PI/180)a/2)+y); /3-ok/<br>
+context.lineTo(x+a/2,y-a/2); /4-ok/<br>
+context.lineTo(x+a-(Math.sin(36Math.PI/180)a/2),(Math.sin(54Math.PI/180)a/2)+y); /5-ok/<br>
+context.lineTo(x+a/2-(Math.sin(72Math.PI/180)a/2),y-Math.sin(18Math.PI/180)*a/2); /6-ok/<br>
 context.fill();<br>
 context.stroke();<br>
 }<br>
