@@ -1,10 +1,11 @@
+# JS-star-function
 <p>A function that generate a perfect 5 corner star.</p>
 <p>You can check the live preview on: <a href="https://negrut112.github.io/JS-star-function/">https://negrut112.github.io/JS-star-function/</a><br>
-<a href="https://i.imgur.com/zOl3RMl.jpg">https://i.imgur.com/zOl3RMl.jpg</a></p>
-<p>HTML</p>
+<img src="https://i.imgur.com/zOl3RMl.jpg">
+<b>HTML</b>
 <p>I have used the HTML to define the area where I’m working defining the height, width and the border style:</p>
 <p>&lt;canvas id=“myCanvas” height=“310” width=“500” style=“border: 1px solid black”&gt;&lt;/canvas&gt;</p>
-<p>JavaScript</p>
+<b>JavaScript</b>
 <p>To make the star I used 3 parameters, two for starting point - left corner and one for side length.<br>
 I had troubles to determine the other angles coordinate so I used math formulas whereas sinus and cosinus.</p>
 <p>Example:</p>
