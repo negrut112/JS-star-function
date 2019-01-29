@@ -11,7 +11,7 @@
 <p>To make the star I used 3 parameters, two for starting point - left corner and one for side length.<br>
 I had troubles to determine the other angles coordinate so I used math formulas whereas sinus and cosinus.</p>
 <p>Example:</p>
-<p>function filledStar(x,y,a){<br>
+<pre><code>function filledStar(x,y,a){<br>
 context.fillStyle=‘red’<br>
 context.beginPath();<br>
 context.moveTo(x+a/2-(Math.sin(72Math.PI/180)a/2), y-Math.sin(18Math.PI/180)a/2); /1-ok/<br>
@@ -24,4 +24,4 @@ context.fill();<br>
 context.stroke();<br>
 }<br>
 console.log();<br>
-filledStar(225,50,70);</p>
+filledStar(225,50,70);<code></pre>
